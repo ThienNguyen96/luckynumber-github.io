@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style2.css" />
+</head>
+<body>
+    <div id="main2">
+                <img class="main__img" src="./img/bg.jpg" alt="">
+                <div class="container">
+                    <!--<img class="container__img" src="img/loto.png" alt="">-->
+                        <ul class="container__list">
+                            <li class="container__li">0</li>
+                            <li class="container__li">3</li>
+                            <li class="container__li">0</li>
+                        </ul>
+
+                        <button type="button" id="container__btnQuay">Quay</button>
+                        <button id="container__btnReset" type="button">Reset</button>
+                </div>
+                <div id="turns">
+                    <h2 id="title-turns">số lượt</h2>
+                    <p id="number">3</p>
+                </div>
+
+                <!-- end turns -->
+
+                <div id="myModal" class="modal">
+                        ​
+                    <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <span class="close">&times;</span>
+                              <h2>Số May Mắn Của Bạn</h2>
+                            </div>
+                            <div class="modal-body">
+                              <p class="modal-body-result">Some text in the Modal Body</p>
+                            </div>
+                        <div class="modal-footer">
+                          
+                        </div>
+                    </div>     ​
+                </div>
+                <!-- end modal -->
+                <!-- history turns -->
+                <div id="myHistory">
+                    <div class="history-header">
+                        <h2>History</h2>
+                    </div>
+                    <div class="history-list">
+                        <ol>
+                        </ol>
+                    </div>
+                </div>
+                <!-- end history -->
+
+                <!-- start bingo sound -->
+                <audio id="myAudio" autoplay="false" muted="true">
+                    <source src="music/bingo-1.wav" type="audio/wav">
+                </audio>
+                <!-- end audio -->
+
+                <!-- bat dau game -->
+                <div id="main">
+			        <div class="view">
+			        	<h1 class="main__title">Lucky Numbers Game</h1>
+				        <marquee class="rdNum1">3</marquee>
+				        <marquee width="50%" class="rdNum1">1</marquee>
+				        <marquee direction="right" class="rdNum1">6</marquee>
+				        <marquee direction="left" class="rdNum1">7</marquee>
+
+				        <button id="btnPlay">Play</button>
+				    </div>
+			    </div>
+			    <!-- ket thuc bat dau game -->
+    </div>
+    <!-- end div main2 -->
+    <script src="js/main2.js"></script>
+</body>
+</html>

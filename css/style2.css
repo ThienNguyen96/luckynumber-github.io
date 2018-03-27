@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div#main2 {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+img.main__img{
+   
+        width: 100%;
+        height: 900px;
+}
+.container {
+    width: 50%;
+    height: 554px;
+    /* background-color: aqua; */
+    /* margin: 0px auto; */
+    position: relative;
+    top: -90%;
+    left: 28%;
+    background-image: url(../img/loto.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container__img{
+    width: 100%;
+    height: 400px;
+}
+ul.container__list {
+    list-style: none;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 47%;
+    left: 9%;
+}
+ul.container__list li {
+    float: left;
+    margin-left: 14px;
+    background-color: #fff;
+    padding: 30px 43px;
+    border-radius: 14px;
+    font-size: 163px;
+}
+button#container__btnQuay{
+    bottom: -10%;
+    left: 39%;
+    padding: 13px 45px;
+    border: none;
+    background-color: #12902f;
+    font-size: 19px;
+    color: #fff;
+    font-family: monospace;
+    border-radius: 21px;
+    box-shadow: -3px 4px 6px 4px #66bf39;
+    position: absolute;
+}
+#number{
+    position: absolute;
+    top: 21%;
+    left: 52%;
+    font-size: 64px;
+    color: red;
+    font-family: cursive;
+
+}
+#title-turns{
+    position: absolute;
+    top: 19%;
+    left: 49%;
+    font-size: 29px;
+    font-family: monospace;
+}
+#container__btnReset{
+    bottom: -22%;
+    left: 39%;
+    padding: 13px 45px;
+    border: none;
+    background-color: #901212;
+    font-size: 19px;
+    color: #fff;
+    font-family: monospace;
+    border-radius: 21px;
+    box-shadow: -2px 4px 14px 4px #bf9039;
+    position: absolute;
+    display: none;
+}
+
+/*The Modal*/
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    z-index: 200;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;/*Enable scroll if needed*/
+    background: rgba(0, 0, 0,0.4);
+}
+.modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2), 0 6px 20px 0 rgba(0, 0, 0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+@keyframes animatetop{
+    from{top: -300px;opacity: 0}
+    to {top: 0;opacity: 1;}
+}
+/*The Close Button*/
+.close{
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 18px 16px;
+    background-color: #5cb85c;
+    color: #fff;
+    text-align: center;
+}
+.modal-body{
+    padding: 44px 16px;
+}
+.modal-footer{
+    padding: 18px 16px;
+    background-color: #5cb85c;
+    color: #fff;
+}
+.modal-body-result{
+    text-align: center;
+    font-size: 125px;
+    color: red;
+}
+
+#myHistory{
+    position: absolute;
+    top:38%;
+    left: 120px;
+    width: 16%;
+    height: 28%;
+}
+.history-header{
+    text-align: center;
+    font-family: monospace;
+    font-size: 21px;
+    background-color: #2982aa;
+    color: #fff;
+}
+.history-list{
+    width: 100%;
+    text-align: left;
+    height: 45%;
+    background-color: #70c6e0;
+
+}
+.history-list ol{
+    margin-left: 32px;
+}
+.history-list li{
+    padding: 8px 10px;
+}
+.history-list-result{
+    padding: 2px 20px;
+}
+
+#dot{
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+#btnBack{
+    position: absolute;
+    top: 10%;
+    left: 9%;
+    padding: 17px 59px;
+    background-color: #7bdad2;
+    border: 0px;
+    color: #ea4949;
+    box-shadow: -5px 2px 5px 1px #30b35d;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 20px
+}
+
+
+div#main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+    background-color: rgba(114, 179, 145, 0.62);
+    display: block;
+    text-align: center;
+}
+div#main .view{
+    width: 64%;
+    height: 500px;
+    background-color: #1dd9e0;
+    margin: 96px auto;
+    z-index: 100;
+    border-radius: 34%;
+}
+h1.main__title {
+    text-align: center;
+    padding: 55px 0px;
+    font-family: cursive;
+    font-size: 36px;
+    color: darkorchid;
+}
+button#btnPlay {
+    padding: 20px 71px;
+    margin-top: 40px;
+    border-radius: 36px;
+    background-color: #52e88c;
+    border: none;
+    color: blue;
+    font-size: 36px;
+    font-family: cursive;
+    z-index: 101;
+    position: absolute;
+    top: 426px;
+    left: 42%;
+}
